@@ -1,5 +1,3 @@
-/* establish rock-paper-scissors comparison // rock beats scissors // scissors beats paper // paper beats rock */
-
 /* function getComputerChoice // randomly return one of the following: 'rock', 'paper', 'scissors' // dub result computerSelection */
 
 /* function getPlayerChoice // request user to input one of three options: 'rock', 'paper', 'scissors' // store input as playerSelection */
