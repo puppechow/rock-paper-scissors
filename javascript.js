@@ -1,9 +1,5 @@
 console.log(`Let's play Rock Paper Scissors! Best of five wins. :)`);
 
-let playerTally = 0;
-let computerTally = 0;
-let roundsRemaining = 5;
-
 /* randomly return one of the following: 'rock', 'paper', 'scissors' // dub result computerSelection */
 var gameArray = ['rock', 'paper', 'scissors']
 let computerSelection = gameArray[Math.floor(Math.random()*gameArray.length)];
