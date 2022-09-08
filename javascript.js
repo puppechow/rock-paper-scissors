@@ -10,27 +10,15 @@ let playerSelection = prompt(`What do you choose: rock, paper, or scissors?`);
 /* function playRound // compare computerSelection with playerSelection // return string that declares result // `You [win/lose]! [Winning object] beats [losing object].`, else `You tied! [object] on [object].` */
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() == `rock` || playerSelection.toLowerCase() == `paper` || playerSelection.toLowerCase() == `scissors`) {
-        if (playerSelection.toLowerCase() == `rock` && computerSelection == `paper`) {
-            /* Rock - Paper */
+        if ((playerSelection.toLowerCase() == `rock` && computerSelection == `scissors`) || (playerSelection.toLowerCase() == `paper` && computerSelection == `rock`) || (playerSelection.toLowerCase() == `scissors` && computerSelection == `paper`)) {
+            /* Player Win */
 
-        } else if (playerSelection.toLowerCase() == `rock` && computerSelection == `scissors`) {
-            /* Rock - Scissors */
-
-        } else if (playerSelection.toLowerCase() == `paper` && computerSelection == `rock`) {
-            /* Paper - Rock */
-
-        } else if (playerSelection.toLowerCase() == `paper` && computerSelection == `scissors`) {
-            /* Paper - Scissors */
-
-        } else if (playerSelection.toLowerCase() == `scissors` && computerSelection == `rock`) {
-            /* Scissors - Rock */
-
-        } else if (playerSelection.toLowerCase() == `scissors` && computerSelection == `paper`) {
-            /* Scissors - Paper */
+        } else if ((playerSelection.toLowerCase() == `rock` && computerSelection == `paper`) || (playerSelection.toLowerCase() == `paper` && computerSelection == `scissors`) || (playerSelection.toLowerCase() == `scissors` && computerSelection == `rock`)) {
+            /* Player Lose */
 
         } else {
-            /* Tie */
-            
+            /* Player Tie */
+
         }
     } else {
         let playerSelection = prompt(`Oops! You didn't make a proper selection. Try again! Choose rock, paper, or scissors.`);
