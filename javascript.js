@@ -6,8 +6,7 @@ var computerSelection = gameArray[Math.floor(Math.random()*gameArray.length)];
 
 /* assign playerSelection // request user to input one of three options: 'rock', 'paper', 'scissors' */
 var playerSelection = prompt(`What do you choose: rock, paper, or scissors?`);
-
-if(gameArray.indexOf(playerSelection) === -1) {
+while (gameArray.indexOf(playerSelection) === -1) {
     var playerSelection = prompt(`Oops! You didn't make a proper selection. Try again! Choose rock, paper, or scissors.`)
   }
 
