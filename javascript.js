@@ -3,7 +3,7 @@ console.log(`Let's play Rock Paper Scissors! Best of five wins. :)`);
 var playerTally = 0;
 var computerTally = 0;
 
-/* function playRound // compare computerSelection with playerSelection // return string that declares result */
+/* compare computerSelection with playerSelection // return string that declares result */
 function playRound(playerSelection, computerSelection) {
     if ((playerSelection.toLowerCase() == `rock` && computerSelection == `scissors`) || (playerSelection.toLowerCase() == `paper` && computerSelection == `rock`) || (playerSelection.toLowerCase() == `scissors` && computerSelection == `paper`)) {
         /* Player Win */
@@ -19,7 +19,7 @@ function playRound(playerSelection, computerSelection) {
         }
 }
 
-/* function game // call playRound function // keep track of score for 5 rounds // return string that declares overall winner after the game is complete // `[User/Computer] wins! [playerTally] to [computerTally]`, else `It's a tie! [playerTally] to [computerTally]` */
+/* call playRound function // keep track of score for 5 rounds // return string that declares overall winner after the game is complete */
 function game() {
     playerTally = 0;
     computerTally = 0;
