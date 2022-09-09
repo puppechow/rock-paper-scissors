@@ -26,7 +26,7 @@ function game() {
 
     for (let roundsRemaining = 4; roundsRemaining >= 0; roundsRemaining--) {
 
-        /* randomly return one of the following: 'rock', 'paper', 'scissors' // dub result computerSelection */
+        /* assign computerSelection // randomly return one of the following: 'rock', 'paper', 'scissors' */
         var gameArray = ['rock', 'paper', 'scissors']
         var computerSelection = gameArray[Math.floor(Math.random()*gameArray.length)];
 
