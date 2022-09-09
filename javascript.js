@@ -1,4 +1,5 @@
-console.log(`Let's play Rock Paper Scissors! Best of five wins. :)`);
+console.log(`%cLet's play Rock Paper Scissors! Best of five wins. :)`, `color: gold; font-size:14px`);
+console.log(`%cType "game()" into the console to get started!`, `color: white; font-size:12px`);
 
 var playerTally = 0;
 var computerTally = 0;
@@ -40,18 +41,20 @@ function game() {
         playRound(playerSelection, computerSelection);
 
         /* display rounds remaining */
-        console.log(`Rounds Remaining: ` + roundsRemaining);
+        console.log(`%cRounds Remaining: ` + roundsRemaining, `color: LightCoral`);
     }
 
     /* Final Score Declarer */
     if (playerTally > computerTally) {
         /* Player Win */
-        console.log(`You win! ` + playerTally + ` to ` + computerTally + `. Congratulations!`);
+        console.log(`%cYou win! ` + playerTally + ` to ` + computerTally + `. Congratulations!`, `color: LawnGreen; font-size:14px`);
     } else if (playerTally < computerTally) {
         /* Player Lose */
-        console.log(`The computer wins! ` + computerTally + ` to ` + playerTally + `. Better luck next time! ;)`);
+        console.log(`%cThe computer wins! ` + computerTally + ` to ` + playerTally + `. Better luck next time! ;)`, `color: red; font-size:14px`);
     } else {
          /* Player Tie */
-        console.log(`It's a tie! ` + playerTally + ` to ` + computerTally + `. Play again to see who is *truly* better. ;)`);
+        console.log(`%cIt's a tie! ` + playerTally + ` to ` + computerTally + `. Play again to see who is *truly* better. ;)`, `color: orange; font-size:14px`);
     }
+
+    console.log(`%cType "game()" into the console to play again!`, `color: white; font-size:12px`);
 }
